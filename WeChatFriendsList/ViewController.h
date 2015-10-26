@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomCell.h"
 
 @interface ViewController : UIViewController
 

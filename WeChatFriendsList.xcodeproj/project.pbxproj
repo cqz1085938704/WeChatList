@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3294620F1BDE0191001612FC /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3294620E1BDE0191001612FC /* CustomCell.m */; };
+		329462151BDE1C34001612FC /* Contact_SyncPhoneContacts_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 329462141BDE1C34001612FC /* Contact_SyncPhoneContacts_avatar@2x.png */; };
 		32B4F5921BC4F2C000572F6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4F5911BC4F2C000572F6F /* main.m */; };
 		32B4F5951BC4F2C000572F6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4F5941BC4F2C000572F6F /* AppDelegate.m */; };
 		32B4F5981BC4F2C000572F6F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4F5971BC4F2C000572F6F /* ViewController.m */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3294620D1BDE0191001612FC /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		3294620E1BDE0191001612FC /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		329462111BDE0816001612FC /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		329462141BDE1C34001612FC /* Contact_SyncPhoneContacts_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact_SyncPhoneContacts_avatar@2x.png"; sourceTree = "<group>"; };
 		32B4F58D1BC4F2C000572F6F /* WeChatFriendsList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatFriendsList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B4F5911BC4F2C000572F6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32B4F5931BC4F2C000572F6F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,11 +68,15 @@
 				32B4F5941BC4F2C000572F6F /* AppDelegate.m */,
 				32B4F5961BC4F2C000572F6F /* ViewController.h */,
 				32B4F5971BC4F2C000572F6F /* ViewController.m */,
+				3294620D1BDE0191001612FC /* CustomCell.h */,
+				3294620E1BDE0191001612FC /* CustomCell.m */,
+				329462141BDE1C34001612FC /* Contact_SyncPhoneContacts_avatar@2x.png */,
 				32B4F5991BC4F2C000572F6F /* Main.storyboard */,
 				32B4F59C1BC4F2C000572F6F /* Assets.xcassets */,
 				32B4F59E1BC4F2C000572F6F /* LaunchScreen.storyboard */,
 				32B4F5A11BC4F2C000572F6F /* Info.plist */,
 				32B4F5901BC4F2C000572F6F /* Supporting Files */,
+				329462111BDE0816001612FC /* Global.h */,
 			);
 			path = WeChatFriendsList;
 			sourceTree = "<group>";
@@ -110,6 +120,7 @@
 				TargetAttributes = {
 					32B4F58C1BC4F2C000572F6F = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = JEV397K6TP;
 					};
 				};
 			};
@@ -138,6 +149,7 @@
 			files = (
 				32B4F5A01BC4F2C000572F6F /* LaunchScreen.storyboard in Resources */,
 				32B4F59D1BC4F2C000572F6F /* Assets.xcassets in Resources */,
+				329462151BDE1C34001612FC /* Contact_SyncPhoneContacts_avatar@2x.png in Resources */,
 				32B4F59B1BC4F2C000572F6F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +163,7 @@
 			files = (
 				32B4F5981BC4F2C000572F6F /* ViewController.m in Sources */,
 				32B4F5951BC4F2C000572F6F /* AppDelegate.m in Sources */,
+				3294620F1BDE0191001612FC /* CustomCell.m in Sources */,
 				32B4F5921BC4F2C000572F6F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WeChatFriendsList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.dev.WeChatFriendsList;
@@ -274,6 +288,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WeChatFriendsList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.dev.WeChatFriendsList;
@@ -300,6 +315,7 @@
 				32B4F5A61BC4F2C000572F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
