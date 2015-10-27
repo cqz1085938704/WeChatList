@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Global.h"
+#import "NSString+CalculateSize.h"
 
 typedef NS_ENUM(NSInteger, CellStyle)
 {

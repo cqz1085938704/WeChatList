@@ -14,23 +14,31 @@
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier])
     {
-        self.cellStyle = CellTypeLeft;
-        self.textLabel.font = [UIFont systemFontOfSize:18];
-        self.textLabel.numberOfLines = 0;
-        self.selectionStyle = UITableViewCellSelectionStyleNone;
-        //self.backgroundColor = [UIColor lightGrayColor];
+        [self setupCell];
     }
     return self;
+}
+
+-(void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    [self setupCell];
+}
+
+- (void)setupCell
+{
+    self.cellStyle = CellTypeLeft;
+    self.textLabel.font = [UIFont systemFontOfSize:14];
+    self.textLabel.numberOfLines = 0;
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 -(void)layoutSubviews
 {
     [super layoutSubviews];
     
-    CGSize size = [self calculateHeightOfText:self.textLabel.text constrainedToWith:WIN_SIZE.width - 90];
-    
-//    self.imageView.layer.borderColor = [UIColor lightGrayColor].CGColor;
-//    self.imageView.layer.borderWidth = 0.5;
+    CGSize size = [self.textLabel.text sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(WIN_SIZE.width - 90, CGFLOAT_MAX)];
     
     
     switch (self.cellStyle)
@@ -54,13 +62,6 @@
         default:
             break;
     }
-}
-
--(CGSize)calculateHeightOfText:(NSString *)text constrainedToWith:(CGFloat)width
-{
-    CGRect rect = [text boundingRectWithSize:CGSizeMake(width, 999999) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]} context:nil];
-    
-    return rect.size;
 }
 
 @end

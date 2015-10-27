@@ -74,7 +74,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CGFloat rowHeight = [self calculateHeightOfText:texts[indexPath.row] constrainedToWith:WIN_SIZE.width - 90];
+    CGFloat rowHeight = [(NSString *)texts[indexPath.row] sizeWithFont:[UIFont systemFontOfSize:14] constrainedToSize:CGSizeMake(WIN_SIZE.width - 90, CGFLOAT_MAX)].height;
     
     if (rowHeight < 60)
     {
@@ -87,13 +87,6 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return texts.count;
-}
-
--(CGFloat)calculateHeightOfText:(NSString *)text constrainedToWith:(CGFloat)width
-{
-    CGRect rect = [text boundingRectWithSize:CGSizeMake(width, 999999) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18]} context:nil];
-    
-    return rect.size.height;
 }
 
 
