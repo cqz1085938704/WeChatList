@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CustomCell.h"
 #import "NSString+CalculateSize.h"
+#import "Util.h"
 
 @interface ViewController : UIViewController
 

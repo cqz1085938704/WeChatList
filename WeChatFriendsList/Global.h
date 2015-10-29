@@ -14,3 +14,9 @@
 
 
 #define WIN_SIZE [UIScreen mainScreen].bounds.size
+
+typedef NS_ENUM(NSInteger, CellStyle)
+{
+    CellTypeLeft,
+    CellTypeRight
+};

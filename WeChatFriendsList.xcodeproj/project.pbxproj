@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		327CF4561BDF6F3500429F53 /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 327CF4551BDF6F3500429F53 /* MessageModel.m */; };
 		3289F0231BDF19BA00888C29 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 3289F0221BDF19BA00888C29 /* Util.m */; };
 		3289F0271BDF1B2A00888C29 /* NSString+CalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 3289F0261BDF1B2A00888C29 /* NSString+CalculateSize.m */; };
 		3294620F1BDE0191001612FC /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3294620E1BDE0191001612FC /* CustomCell.m */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		327CF4541BDF6F3500429F53 /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		327CF4551BDF6F3500429F53 /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
 		3289F0211BDF19BA00888C29 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		3289F0221BDF19BA00888C29 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 		3289F0251BDF1B2A00888C29 /* NSString+CalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CalculateSize.h"; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				3289F0221BDF19BA00888C29 /* Util.m */,
 				3289F0251BDF1B2A00888C29 /* NSString+CalculateSize.h */,
 				3289F0261BDF1B2A00888C29 /* NSString+CalculateSize.m */,
+				327CF4541BDF6F3500429F53 /* MessageModel.h */,
+				327CF4551BDF6F3500429F53 /* MessageModel.m */,
 			);
 			path = WeChatFriendsList;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				3294620F1BDE0191001612FC /* CustomCell.m in Sources */,
 				32B4F5921BC4F2C000572F6F /* main.m in Sources */,
 				3289F0271BDF1B2A00888C29 /* NSString+CalculateSize.m in Sources */,
+				327CF4561BDF6F3500429F53 /* MessageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WeChatFriendsList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.dev.WeChatFriendsList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +309,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = WeChatFriendsList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.dev.WeChatFriendsList;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,12 +10,6 @@
 #import "Global.h"
 #import "NSString+CalculateSize.h"
 
-typedef NS_ENUM(NSInteger, CellStyle)
-{
-    CellTypeLeft,
-    CellTypeRight
-};
-
 @interface CustomCell : UITableViewCell
 
 @property (nonatomic, assign)CellStyle cellStyle;
